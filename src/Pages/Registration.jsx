@@ -30,7 +30,7 @@ import axios from 'axios';
     <style
       dangerouslySetInnerHTML={{
         __html:
-          "@import url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css')"
+          "@import url('https://api.time.com/wp-content/uploads/2023/03/Worlds-Greatest-Places-Aqaba-Jordan.jpg')"
       }}
     />
     <div className="min-w-screen min-h-screen bg-gray-900 flex items-center justify-center px-5 py-5">
@@ -39,9 +39,12 @@ import axios from 'axios';
         style={{ maxWidth: 1000 }}
       >
         <div className="md:flex w-full">
-          <div className="hidden md:block w-1/2 bg-indigo-500 py-10 px-10">
+           <div className="hidden md:block w-1/2 bg-indigo-500 py-10 px-10">
+            <div>
+              <img src="https://www.allen.ac.in/apps2324/assets/images/reset-password.jpg" alt="" />
+            </div>
             
-          </div>
+          </div> 
           <div className="w-full md:w-1/2 py-10 px-5 md:px-10">
             <div className="text-center mb-10">
               <h1 className="font-bold text-3xl text-gray-900">REGISTER</h1>
@@ -60,7 +63,7 @@ import axios from 'axios';
                     <input
                       type="text"
                       className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                      placeholder="John"
+                      placeholder="Ahmad"
                     />
                   </div>
                 </div>
@@ -80,7 +83,7 @@ import axios from 'axios';
                     <input
                       type="email"
                       className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                      placeholder="johnsmith@example.com"
+                      placeholder="Ahmad@example.com"
                     />
                   </div>
                 </div>
