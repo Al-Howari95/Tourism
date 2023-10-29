@@ -54,9 +54,7 @@ import axios from 'axios';
               <div >
                 <div>
                 <label htmlFor="userName"    onChange={(e) => setUserName(e.target.value)}
-className="text-xs font-semibold px-1">
-  User Name
-</label>
+               className="text-xs font-semibold px-1"> User Name</label>
 
 
                   <div id='s' className="flex">
@@ -112,14 +110,13 @@ className="text-xs font-semibold px-1">
                 <div className="w-full px-3 mb-5">
                   
                 <form onSubmit={handleRegistration}>
-  {/* ... input fields */}
-  <button
-    type="submit"
-    className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"
-  >
-    REGISTER NOW
-  </button>
-</form>
+                {/* ... input fields */}
+                <button
+                 type="submit"
+                 className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">
+                 REGISTER NOW
+                 </button>
+                 </form>
                 </div>
               </div>
             </div>

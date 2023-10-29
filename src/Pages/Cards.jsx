@@ -8,7 +8,7 @@ const blogData = [
     // Add more blog data here
 ];
 
-const Blogs = () => {
+const Cards = () => {
     const itemsPerPage = 3; // Number of blogs per page
     const [currentPage, setCurrentPage] = useState(1);
 
@@ -63,4 +63,4 @@ const Pagination = ({ itemsPerPage, totalItems, currentPage, paginate }) => {
     );
 };
 
-export default Blogs;
+export default Cards;

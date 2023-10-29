@@ -19,17 +19,20 @@ return (
 
     <div className="App">
       <Header />
+     
       <Routes>
+     
         {/* <Hero/> */}
         <Route path="/" element={<Home/>} />  
         <Route path="/Login" element={<Login />} />
         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/cards" element={<Cards />} />
-        <Route path="/Registration" element={<Registration />} />
+        <Route path="/Cards" element={<Cards />} />
+        <Route path="/Registration" element={<Registration/>} />
        </Routes> 
        {/* <Blogs/> */}
+       {/* <Cards/> */}
       <Footer />
-     
+    
     </div>
    </Router>
 );

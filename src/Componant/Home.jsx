@@ -1,9 +1,10 @@
 import React from 'react'
 import {Link } from 'react-router-dom';
 
+
 const Hero = () => {
   return (
-    <div><>
+    <div>
     {/* component */}
     <div className="h-screen bg-gray-50 flex items-center">
       <section
@@ -35,9 +36,9 @@ const Hero = () => {
         </div>
       </section>
     </div>
-  </>
+ 
   </div>
   )
-}
+} 
 
 export default Hero

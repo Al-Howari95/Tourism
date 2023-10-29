@@ -48,7 +48,7 @@
  
 }
 Footer {
-  margin-top: -1px;
+  margin-top: 200px;
 }
 
 h1 {
@@ -156,3 +156,6 @@ a:hover{
   color: white;
 }
 
+.blog-list {
+  margin-top: 50px;
+}
