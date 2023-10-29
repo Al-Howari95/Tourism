@@ -24,11 +24,11 @@ const Blogs = () => {
       const response = await axios.post('http://127.0.0.1:3000/addBlog', formData);
 
       // Handle the response as needed
-      console.log('Server Response:', response.data);
+      alert('Server Response:', response.data);
 
       // You can also redirect or show a success message to the user
     } catch (error) {
-      console.error('An error occurred while submitting the form:', error);
+      alert('An error occurred while submitting the form:', error);
     }
   };
 

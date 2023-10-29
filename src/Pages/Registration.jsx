@@ -16,11 +16,11 @@ import axios from 'axios';
         });
   
         // Handle the response as per your application's needs
-        console.log('Server Response:', response.data);
+        alert('Server Response:', response.data);
   
         // You can also redirect the user to another page after registration
       } catch (error) {
-        console.error('An error occurred during registration:', error);
+        alert('An error occurred during registration:', error);
       }
     };
 
@@ -53,9 +53,12 @@ import axios from 'axios';
             <div>
               <div >
                 <div>
-                   <label id='m' htmlFor="" className="text-xs font-semibold px-1">
-                    User Name
-                  </label>
+                <label htmlFor="userName"    onChange={(e) => setUserName(e.target.value)}
+className="text-xs font-semibold px-1">
+  User Name
+</label>
+
+
                   <div id='s' className="flex">
                     <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                       <i className="mdi mdi-account-outline text-gray-400 text-lg" />
@@ -72,7 +75,7 @@ import axios from 'axios';
               
               <div className="flex -mx-3">
                 <div className="w-full px-3 mb-5">
-                  <label htmlFor="" className="text-xs font-semibold px-1">
+                  <label htmlFor="" onChange={(e)=>setEmail(e.target.value)} className="text-xs font-semibold px-1">
                     Email
                   </label>
                   
@@ -90,7 +93,7 @@ import axios from 'axios';
               </div>
               <div className="flex -mx-3">
                 <div className="w-full px-3 mb-12">
-                  <label htmlFor="" className="text-xs font-semibold px-1">
+                  <label htmlFor="" onChange={(e)=>setPassword(e.target.value)} className="text-xs font-semibold px-1">
                     Password
                   </label>
                   <div className="flex">
@@ -107,9 +110,16 @@ import axios from 'axios';
               </div>
               <div className="flex -mx-3">
                 <div className="w-full px-3 mb-5">
-                  <button className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">
-                    REGISTER NOW
-                  </button>
+                  
+                <form onSubmit={handleRegistration}>
+  {/* ... input fields */}
+  <button
+    type="submit"
+    className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"
+  >
+    REGISTER NOW
+  </button>
+</form>
                 </div>
               </div>
             </div>
