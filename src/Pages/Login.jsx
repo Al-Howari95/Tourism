@@ -7,7 +7,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://127.0.0.1:3000/login', { email, password });
+      const response = await axios.post('http://127.0.0.1:4000/login', { email, password });
 
       // Handle the response here as per your application's needs
       alert('Server Response: ' + response.data);

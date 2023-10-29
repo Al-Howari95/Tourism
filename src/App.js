@@ -6,8 +6,10 @@ import Footer from './Componant/Footer';
 import Login from './Pages/Login';
 import Registration from './Pages/Registration';
 import Home from './Componant/Home';
-import Blogs from './Componant/Blogs';
-import Cards from './Pages/Cards';
+import Form from './Componant/Form';
+import Blogs from './Pages/Blogs';
+
+import BlogsDetiles from './Pages/BlogsDetiles';
 
 
 
@@ -25,8 +27,9 @@ return (
         {/* <Hero/> */}
         <Route path="/" element={<Home/>} />  
         <Route path="/Login" element={<Login />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/Cards" element={<Cards />} />
+        <Route path="/Form" element={<Form />} />
+        <Route path="/Blogs" element={<Blogs />} />
+        <Route path="/BlogsDetiles" element={<BlogsDetiles />} />
         <Route path="/Registration" element={<Registration/>} />
        </Routes> 
        {/* <Blogs/> */}

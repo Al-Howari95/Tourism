@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const Blogs = () => {
+const Form = () => {
   const [formData, setFormData] = useState({
     name: '',
     description: '',
@@ -21,7 +21,7 @@ const Blogs = () => {
 
     try {
       // Send the data to the server using Axios or another method
-      const response = await axios.post('http://127.0.0.1:3000/addBlog', formData);
+      const response = await axios.post('http://127.0.0.1:4000/addBlog', formData);
 
       // Handle the response as needed
       alert('Server Response:', response.data);
@@ -118,4 +118,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default Form;

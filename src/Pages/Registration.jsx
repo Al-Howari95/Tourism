@@ -9,7 +9,7 @@ import axios from 'axios';
     const handleRegistration = async () => {
       try {
         // Send the data to the server using Axios or another method
-        const response = await axios.post('http://127.0.0.1:3000/register', {
+        const response = await axios.post('http://127.0.0.1:4000/register', {
           userName,
           email,
           password,

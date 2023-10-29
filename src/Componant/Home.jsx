@@ -19,7 +19,7 @@ const Hero = () => {
               Jordan, a land steeped in history and natural beauty, has emerged as a captivating tourist destination in the Middle East.
               </p>
               <Link
-                to="/blogs" id='demo'
+                to="/Form" id='demo'
                 className="bg-indigo-500 text-white py-4 px-12 rounded-full hover:bg-indigo-600"
               >
                 Add Blogs
